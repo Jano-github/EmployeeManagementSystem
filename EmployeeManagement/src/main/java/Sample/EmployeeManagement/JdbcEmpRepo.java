@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import Sample.EmployeeManagement.Bean.Employee;
 import Sample.EmployeeManagement.Bean.EmployeeException;
 @Repository
-public class JdbcEmpRepo {
+public class JdbcEmpRepo implements EmployeeRepository{
 
 	@Autowired
     private JdbcTemplate jdbcTemplate;
