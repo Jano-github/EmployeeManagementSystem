@@ -9,7 +9,7 @@ public interface EmployeeRepository {
 
 	int save(Employee emp);
 
-    int update(Employee emp);
+    int update(Employee emp) throws EmployeeException;
 
     List<Employee> findAll();
 }
